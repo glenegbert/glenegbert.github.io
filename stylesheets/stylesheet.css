@@ -502,9 +502,17 @@ aside#sidebar {
   width: 200px;
   min-height: 504px;
   padding-left: 20px;
-  font-size: 12px;
+  font-size: 19px;
   line-height: 1.3;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__content {
+  flex-direction: column;
+  margin-left: 100px;
+  line-height: 1.8;
 }
 
 aside#sidebar p.repo-owner,
@@ -530,11 +538,23 @@ a.button small {
   display: block;
   font-size: 11px;
 }
+
+.profile-pic {
+  border-radius: 60%;
+  border: solid 1px #275da1;
+  display: flex;
+  margin-left: 40px;
+}
+
 header a.button {
   position: absolute;
   top: 0;
   right: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+.sidebar__contact-information {
+  list-style:none;
+  margin-top: none;
 }
 aside a.button {
   display: block;
@@ -542,7 +562,7 @@ aside a.button {
   padding-left: 64px;
   margin-bottom: 20px;
   font-size: 21px;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  background: transparent url(../images/profile-pic.jpg) 0 0 no-repeat;
 }
 
 code, pre {
@@ -623,10 +643,7 @@ form {
 }
 
 #main-content h1:before {
-  padding-right: 0.3em;
-  margin-left: -0.9em;
-  color: #9ddcff;
-  content: "/";
+  content: none;
 }
 
 #main-content h2 {
