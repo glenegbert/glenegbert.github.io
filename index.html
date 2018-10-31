@@ -1,12 +1,18 @@
 ---
 layout: default
-title: Architect Theme by Jason Long
+title: Glen Egbert
 ---
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      <li class="blog-list__list">
+        <span class="blog-list__post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+        <span>{{ post.date | date_to_string }}</span>
+        <div>
+          {{post.excerpt | strip_html}}
+        </div>
+      </li>
     {% endfor %}
   </ul>
 </div>

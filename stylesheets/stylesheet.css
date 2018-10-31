@@ -546,6 +546,13 @@ a.button small {
   margin-left: 40px;
 }
 
+.blog-list__list {
+  list-style:none;
+}
+
+.blog-list__post-title {
+  font-size: 22px;
+}
 header a.button {
   position: absolute;
   top: 0;
