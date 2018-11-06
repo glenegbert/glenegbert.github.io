@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello World !"
+title:  "Hello World!"
 date:   2018-11-05 15:40:56
 categories: update
 ---
